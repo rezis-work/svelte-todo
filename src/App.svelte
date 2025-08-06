@@ -19,6 +19,7 @@
   })
 
   function addTask(task: string) {
+    if (task.trim() === "") return;
     tasks.push({
       id: crypto.randomUUID(),
       title: task,
